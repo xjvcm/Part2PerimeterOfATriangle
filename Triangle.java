@@ -20,21 +20,21 @@ public class Triangle {
         double sideOne, sideTwo, sideThree, perimeter;
 
         // Prompt user to input lenght of each side
-        System.out.println("Enter lengths of sides of the triangle: ");
-        System.out.print("Side 1: ");
+        System.out.print("Enter lengths of sides of the triangle: ");
         sideOne = input.nextDouble();
-        System.out.print("Side 2: ");
         sideTwo = input.nextDouble();
-        System.out.print("Side 3: ");
         sideThree = input.nextDouble();
 
         // Validate inputs
         if ((sideOne + sideTwo) <= sideThree || (sideOne + sideThree 
             <= sideTwo) || (sideTwo + sideThree) <= sideOne) {
+                // If sides are not valid this error message will print
                 System.out.println("Those sides do not specify a valid "
                 + "triangle.");
         }
         else {
+            // If sides are valid, it will sum up the sides for the
+            // perimeter
             perimeter = sideOne + sideTwo + sideThree;
             System.out.println("The perimeter of the triangle is " 
                 + perimeter);
